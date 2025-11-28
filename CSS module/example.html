@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* Hide the actual checkbox, but it's still functional */
+  .modal-state {
+    display: none;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* When checkbox is checked, display the modal overlay and box */
+  .modal-state:checked + .modal-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Transition for the modal box */
+    transform: translateY(-50px); /* Start slightly above its natural position */
+    transition: transform 0.5s ease-out;
+  }
+
+  .modal-state:checked + .modal-overlay .modal-box {
+    transform: translateY(0); /* Move to its natural position */
+  }
+
+/* Style for open and close buttons */
+  .modal-open-button, .modal-close-button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .modal-close-button:hover, .modal-open-button:hover {
+    background-color: #367B48;
+  }
+  </style>
+</head>
+<body>
+  <!-- Label acts as a button to open the modal -->
+<label for="toggle-modal" class="modal-open-button">Open Modal</label>
+
+
+<input type="checkbox" id="toggle-modal" class="modal-state">
+
+
+<div class="modal-overlay">
+    
+    <div class="modal-box">
+        <h2>Modal Title</h2>
+        <p>This is a modal box. You can place your content here.</p>
+        
+        <label for="toggle-modal" class="modal-close-button">Close</label>
+    </div>
+</div>
+</body>
+</html>

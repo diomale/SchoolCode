@@ -1,0 +1,132 @@
+/* Canvas General */
+.canvas1, .canvas2, .canvas3, .canvas4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------- Canvas 1 ------------------- */
+.box1-blue {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin-right: 1px;
+}
+
+.box1-red {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+/* ------------------- Canvas 2 ------------------- */
+.box2-blue {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin-right: 1px;
+  position: relative;
+  
+  
+}
+
+.box2-green {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  position: absolute;
+  top: 100px;
+  
+  
+}
+
+.box2-blue2 {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  position: relative;
+}
+
+.box2-yellow {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position: relative;
+  left: 100px;
+}
+
+/* ------------------- Canvas 3 ------------------- */
+.box3-blue1 {
+  height: 200px;
+  width: 100px;
+  background-color: blue;
+  margin-right: 1px;
+}
+
+.box3-green {
+  height: 200px;
+  width: 100px;
+  background-color: green;
+  margin-right: 1px;
+}
+
+.box3-blue2 {
+  height: 100px;
+  width: 20px;
+  background-color: blue;
+}
+
+.box3-blue3 {
+  height: 200px;
+  width: 100px;
+  background-color: blue;
+  margin-left: 1px;
+}
+
+/* ------------------- Canvas 4 ------------------- */
+.box4-blue1 {
+  height: 200px;
+  width: 100px;
+  background-color: blue;
+  margin-right: 1px;
+}
+
+.box4-yellow1 {
+  height: 200px;
+  width: 100px;
+  background-color: yellow;
+  margin-right: 1px;
+}
+
+.box4-yellow2 {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin-right: 1px;
+}
+
+.box4-red {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin-right: 1px;
+}
+
+.box4-blue2 {
+  height: 200px;
+  width: 100px;
+  background-color: blue;
+  margin-right: 1px;
+}

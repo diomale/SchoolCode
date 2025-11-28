@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunnydale School</title>
+    
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        }
+      h1{
+        font-size: 24px; 
+        font-weight: bold; 
+        color:#1E90FF;
+      }
+      #mission{
+        color: #32CD32;
+      }
+      .events{
+        color: #FFA07A;
+      }
+      #contact{
+        color: #20B2AA;
+      }
+      span{
+        font-weight: bold;
+        color: red;
+      }
+      .events{
+        background-color: #FFFFE0;
+      }
+      .outdoor{
+        background-color: #AFEEEE;
+        padding: 5x;
+        border: 1px solid #B0E0E6;
+      }
+      div{
+        background-color: #f8f3f3;
+        padding: 10px;
+      }
+    </style>
+
+</head>
+<body>
+    <h1>Sunnydale School</h1>
+    <p>Welcome to Sunnydale School, dedicated to fostering a love of learning in every student.</p>
+    
+    <h2 id="mission">Mission Statement</h2>
+    <p>Our mission is to provide a quality education that prepares all children for a successful future.</p>
+    
+    <h2 class="events" id="upcoming-events">Upcoming Events</h2>
+    <ul>
+        <li data-event-type="indoor" class="indoor" title="Event Type: indoor">Science Fair - <span>June 10</span></li>
+        <li data-event-type="outdoor" class="outdoor" title="Event Type: Outdoor">Art Exhibition - <span>June 15</span></li>
+        <li data-event-type="outdoor" class="outdoor" title="Event Type: Outdoor">Sports Day - <span>June 20</span></li>
+    </ul>
+    
+    <div>
+      <h2 id="contact">Contact Us</h2>
+      <p title="Click to copy email">Email: info@sunnydaleschool.com</p>
+      <p title="Click to copy Phone">Phone: 555-1234</p>
+      <button type="button" onclick="alert('Thanks for reaching out!')">Tap me</button>
+      </div>
+</body>
+</html>
