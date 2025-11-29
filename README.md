@@ -1,2 +1,2 @@
 # HTML JS CS 
-My path learning New Language
+My path learning New Languages 
