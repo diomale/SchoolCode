@@ -33,3 +33,6 @@ console.log(`last contact: ${last_contact}`)
 
 
 
+let summer = ["June", "July", "August"];
+let index = summer.indexOf("June");
+ console.log(index)
