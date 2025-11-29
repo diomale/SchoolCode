@@ -46,11 +46,25 @@ let new_book = {
 
 books.push(new_book);
 
-console.log(books.length)
+console.log(`Books total: ${books.length}`)
 console.log(books)
 console.log(`Book no.1 ${books[0].title}`)
 console.log(`Book no.2 ${books[1].title}`)
 console.log(`Book no.3 ${books[2].title}`)
 console.log(`Book no.4 ${books[3].title}`)
 
+//Question 5
+let SelectedBooks = books.slice(-2)
+console.log(SelectedBooks)
 
+//Question 6
+books.shift()
+console.log(`total books: ${books.length}`)
+console.log(`Book no.1 ${books[0].title}`)
+console.log(`Book no.2 ${books[1].title}`)
+console.log(`Book no.3 ${books[2].title}`)
+
+//Question 7
+let sum = books[0].NoP + books[1].NoP + books[2].NoP;
+
+console.log(`pages sum: ${sum}`)
