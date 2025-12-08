@@ -33,6 +33,22 @@ console.log(`last contact: ${last_contact}`)
 
 
 
-let summer = ["June", "July", "August"];
+/* let summer = ["June", "July", "August"];
 let index = summer.indexOf("June");
  console.log(index)
+
+let isOver = false;
+let counter = 1;
+ 
+while (isOver != true) {
+    let continueLoop = confirm(`[${counter}] Continue the loop?`);
+    isOver = continueLoop === true ? false : true;
+    counter = counter + 1;
+}
+
+let isOver;
+let counter = 1;
+ 
+do {
+    isOver = !confirm(`[${counter++}] Continue the loop?`);
+} while (!isOver); */

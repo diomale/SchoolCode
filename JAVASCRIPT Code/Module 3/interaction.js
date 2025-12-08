@@ -33,7 +33,8 @@ if (question)
 
 alert(contacts.length + " contacts in total.");
 alert(contacts[0].name + " is the first contact.");
-alert (contacts[contacts.length - 1].name + " is the last contact.");
+alert(`${contacts[contacts.length - 1].name} / ${contacts[contacts.length - 1].phone} / ${contacts[contacts.length - 1].email}`);
+
 
 let last = contacts.length - 1;
 
